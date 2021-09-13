@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 80vh;
+    margin: auto;
+    text-align: center;
+}
+.heading{
+    width: 100%;
+    height: auto;
+    background: yellow;
+    padding: 20px;
+    text-align: center;
+    color: rgb(133, 128, 128);
+    margin-bottom: 20px;
+}
+#input-text{
+    width: 70%;
+    height: 20vh ;
+    border: none;
+    padding: 20px;
+    font-size: 1rem;
+    box-shadow: 3px 5px 3px 5px #d4d3d3;
+}
+textarea:focus{
+    outline: none;
+}
+
+#translateBtn{
+    margin:30px;
+    background: yellowgreen;
+    font-size: 14pt;
+    font-weight: bolder;
+    border: none;
+    padding: 20px;
+    width: 50%;
+    color: white;
+    border-radius: 20px;
+}
+
+#translateBtn:hover{
+    background: rgb(189, 236, 94);
+    cursor: pointer;
+    color: rgb(46, 46, 46);
+}
+
+.container span{
+    display: block;
+    margin-bottom: 20px;
+}
+
+#output{
+    height: 20vh;
+    width: 70%;
+    box-shadow: 3px 5px 3px 5px #dbdada;
+    margin: auto;
+    padding: 10px;
+}
