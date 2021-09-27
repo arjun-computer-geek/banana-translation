@@ -16,7 +16,7 @@ const handleClick = () => {
     fetch(apiUrl)
         .then(response => response.json())
         .then(json => {
-            console.log(json.contents.translated)
+            console.log(json)
             output.innerText = json.contents.translated;
             })
         .catch(errorHandler)
