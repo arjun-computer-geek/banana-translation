@@ -6,8 +6,8 @@ var apiUrl = `https://api.funtranslations.com/translate/minion.json?text=${input
 
 const errorHandler = (error) => {
 
-    window.alert(error.message);
-    console.log(error.message);
+    window.alert(error);
+    console.log(error);
 }
 
 
@@ -19,7 +19,7 @@ const handleClick = () => {
             console.log(json)
             output.innerText = json.contents.translated;
             })
-        .catch(errorHandler)
+        .catch((err) => errorHandler('something went wrong. Please try again'))
 }
 
 translateBtn.addEventListener('click', handleClick)
