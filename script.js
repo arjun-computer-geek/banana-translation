@@ -6,7 +6,7 @@ var apiUrl = `https://api.funtranslations.com/translate/minion.json?text=${input
 
 const errorHandler = (error) => {
 
-    alert(`You reached Maximum attempts. Please try after an hours.`)
+    alert(erro.message)
     console.log(error)
 }
 
