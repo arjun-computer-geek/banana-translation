@@ -12,11 +12,11 @@ const errorHandler = (error) => {
 
 
 const handleClick = () => {
-    
 
     fetch(apiUrl)
         .then(response => response.json())
         .then(json => {
+            console.log(json.contents.translated)
             output.innerText = json.contents.translated;
             })
         .catch(errorHandler)
