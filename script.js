@@ -7,7 +7,7 @@ var apiUrl = `https://api.funtranslations.com/translate/minion.json?text=${input
 const errorHandler = (error) => {
 
     alert(erro.message)
-    console.log(error)
+    console.log(error.message)
 }
 
 
